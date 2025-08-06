@@ -2,7 +2,7 @@
 
 # Flashcards App
 
-Um app fullstack para revisão inteligente de flashcards, com sincronização web/mobile, TTS, importação CSV e algoritmo de repetição espaçada.
+Um app fullstack para revisão inteligente de flashcards, com sincronização web/mobile, TTS, importação CSV e algoritmo de fila de prioridade adaptativa.
 
 **Stack:** Next.js, React Native (Expo), Firebase/Supabase.
 
@@ -15,6 +15,7 @@ Um app fullstack para revisão inteligente de flashcards, com sincronização we
   - **Backend plugável:** Firebase (estudo) e Supabase (produção).
   - **Funcionalidades:** Auth, CRUD, revisão com TTS, importação CSV, sync.
   - **Arquitetura limpa:** Fácil alternância entre backends.
+  - **Sistema de revisão:** Fila de estudo infinita com prioridade adaptativa.
 
 -----
 
@@ -96,7 +97,7 @@ Configure as variáveis de ambiente conforme `.env.example` em cada projeto. Vej
   - Revisão com TTS (mobile)
   - Importação de flashcards via CSV
   - Sincronização mobile
-  - Algoritmo para revisão espaçada
+  - Sistema de fila de estudo infinita com prioridade adaptativa
 
 Veja detalhes em `docs/funcionalidades.md`.
 
